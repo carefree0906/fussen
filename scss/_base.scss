@@ -1,0 +1,161 @@
+/*header*/
+// .headerfix{
+// 	position: fixed;
+//     top: 0px;
+//     width: 100%;
+//     z-index: 20;
+// 		background: #fff;
+// }
+.header{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px auto;
+
+    h1 a{
+	display: block;
+	width: 217px;
+	height: 66px;
+    }
+
+	.menu{
+		
+	display: flex;
+	align-items: center;
+	font-size: $fz-1-5;
+		
+		li{
+			padding-left: 32px;
+			
+		}
+		li a{
+			/*position: relative;*/
+			display: block;
+
+			color: $text-secondary;
+			&:hover{
+				color: $text-primary;
+			}
+		}
+		em{
+			display: none;
+		}
+	@include pad{
+		li{
+			font-size: $fz-normal;
+			padding-left: 20px;
+			position: relative;
+		}
+	}
+	@include mobile{
+		li{
+			padding-left: 20px;
+		}
+
+		span{
+			display: none;
+		}
+		em{
+			position: absolute;
+			display: block;
+			top: -8px;
+			right:-12px;
+			background: $text-secondary;
+			width: 16px;
+			height: 16px;
+			border-radius: 8px;
+			font-size: $fz-0;
+			text-align: center;
+			color: $text-white;
+		}
+	}
+	}
+   
+}
+
+
+
+/*brand*/
+.brand{
+	background-color: $text-primary;
+	margin-bottom: 80px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	
+	
+
+	.brandmenu{
+		display: flex;
+		font-size: $fz-1-5;
+		
+		
+		
+		a{			
+			color: $text-white;
+			display: block;
+			padding: 14px;
+		}
+	}
+}
+@include pad{
+	.brand{		
+		background-color: none;
+		
+		/*margin-bottom: 40px;*/
+		.brandmenu{
+			display: none;
+			/*font-size: $fz-normal;
+			a{
+			padding: 10px;
+			}*/
+		}
+		
+	}
+}
+
+
+
+/*footer*/
+.footerBg{
+	background-color: $text-gray;
+	padding-top: 20px;
+	padding-bottom: 20px;    
+
+
+	.footer{
+		display: flex;
+		justify-content: space-between;
+		color: $text-white;
+	}
+	.logo{
+		display: flex;
+	}
+	p{
+		padding-top: 11px;
+		padding-bottom: 11px;
+		font-size: $fz-1;
+		margin-left: 20px;
+		line-height: 21px;
+	}
+	.menu{
+		display: flex;
+		align-items: center;
+		a{
+			display: block;
+			font-size: $fz-1-5;
+			color: $text-white;
+		}
+		li{
+			padding-left: 32px;
+		}
+	}
+}
+
+@include pad{
+	.footerBg{	
+		.menu{
+			display: none;
+		}
+		.footer{
+			justify-content: center;
+		}		
+	}
+}

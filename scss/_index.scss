@@ -1,0 +1,312 @@
+/*banner*/
+.banner{
+	background: url("../img/p13.jpg");
+	background-size: cover;
+	color: $text-white;
+	margin-bottom: 60px;
+	margin-top: -80px;
+}
+.bannerContent{
+	display: flex;
+	justify-content: flex-start;
+}
+.bannerText{
+	width: 445px;
+ 	padding-top: 100px;
+ 	padding-bottom: 295px;
+	h2{
+		font-size: $fz-6;
+		line-height: 60px;
+		font-weight: 500;
+	}
+	p{
+		font-size: $fz-3;
+		line-height: 36px;
+	}
+	button{
+		width: 350px;
+		height: 60px;
+		font-size: $fz-4;
+		color: $text-white;
+		border-radius: 30px;
+		background: rgba(255,255,255,0);
+		border: 2px solid #ffffff;
+		margin-top: 16px;
+
+		&:hover{
+			background: rgba(255, 255, 255, 0.5);
+			cursor: pointer;	
+		}
+	}
+}
+@include pad{
+	.bannerText{
+		width: 100%;		
+	}
+}
+
+
+/*product*/
+.product{
+	display: flex;
+	
+	.productPic{
+		width: 50%;
+		height: 555px;
+	}
+	.productPicBottom{
+	width: 50%;
+	height: 1080px;
+	}
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.productText{
+	width: 50%;
+	padding: 110px 50px;
+
+	h2{
+		font-size: $fz-5;
+		line-height: 48px;
+		font-weight: bold;
+		padding-bottom: 5px;
+	}
+	p{
+		font-size: $fz-2;
+		line-height: 30px;
+		padding-bottom: 16px;
+	}
+	a{
+		line-height: 20px;
+		color: $text-primary;
+		&:hover{
+		color: darken($text-primary,10%);
+		}
+	}	
+	.BottomTitle{		
+		font-size: $fz-3;
+		line-height: 36px;
+	}
+	button{
+		width: 350px;
+		height: 60px;
+		font-size: $fz-2;
+		color: $text-primary;
+		border-radius: 30px;
+		border: 2px solid $text-primary;
+		margin-top: 60px;
+		background-color: $text-white;
+
+		&:hover{
+			color: darken($text-primary,10%);
+			font-weight: bold;
+			border: 2px solid darken($text-primary,10%);
+			cursor: pointer;
+		}
+	}
+}
+
+@include pad{
+	.product{
+		display: block;
+		.productPic,.productPicBottom{
+		width: 100%;
+		}
+	}
+	.productText{
+		width: 100%;
+		padding: 0 15px; 
+		margin-bottom: 20px;
+		padding: 32px;
+		button{
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+}
+
+.row-reverse{
+	display: flex;
+	flex-direction: row-reverse;
+}
+@include pad{
+	.row-reverse{
+ 		display: block;
+ 		flex-direction: row;
+ 	}
+}
+
+/*showProduct*/
+.showProductBg{
+	background-color: $text-light-secondary;
+	margin-top: 60px;
+}
+.showProduct{
+	display: flex;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.showProductContent{
+	width: 33.3333333333%;
+	margin: 0 15px;	
+	.showProductPic{		
+	width: 100%;
+	height: 540px;	
+	background-size: cover;	
+	background-repeat: no-repeat;
+	background-position: center;
+
+	}
+	.pic1{		
+		background-image: url("../img/p9.jpg");
+	}	
+	.pic2{
+		background-image: url("../img/p10.jpg");	
+	}
+	.pic3{	
+		background-image: url("../img/p11.jpg");	
+	}	
+	h3{
+		font-size: $fz-3;
+		line-height: 36px;
+		font-weight: bold;
+		padding-top: 10px;
+	}
+	p{
+	   margin-bottom: 16px;
+	   margin-top: 5px;
+	   line-height: 24px;
+	}
+	del{
+		color: $text-secondary;
+		margin-left: 8px;
+	}
+	.soldout{
+		background-color: $text-black;
+		opacity: 0.1;
+		color:$text-white;	
+		font-size: $fz-3;
+		line-height: 540px;
+		text-align: center;
+	}	
+}
+
+/*showProduct pad*/
+@include pad{
+	.showProduct{
+		display: block;
+	}
+	.showProductContent{
+		width: 100%;		
+		margin: 5% auto;
+		.showProductPic{
+			background-position: bottom 20% center;
+		}
+	}
+}
+
+
+/*bottle-recycling*/
+.bottle-recycling{
+	display: flex;
+	margin-top: 60px;
+	margin-bottom: 60px;
+
+	.bottlePic{
+		width: 66.6666666666%;
+		margin-right: 15px;	
+	}
+	.bottleText{
+		width: 33.3333333333%;
+		padding: 60px 15px;
+	}
+	h2{
+		font-size: $fz-5;
+		line-height: 48px;
+		font-weight: bold;
+	}
+	.title{
+		font-size: $fz-2;
+		line-height: 30px;
+	}
+	.text{
+		line-height: 24px;
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+	a{
+		line-height: 24px;
+		color: $text-primary;
+
+		&:hover{
+			color: darken($text-primary,10%);
+		}
+	}	
+ }
+
+/*bottle-recycling pad*/
+@include pad{
+	.bottle-recycling{
+		display: block;
+		margin-top: 40px;
+		margin-bottom: 40px;	
+
+		.bottlePic{
+			width: 100%;
+			margin-right: 0px;
+		}
+		.bottleText{
+			width: 100%;
+			padding: 10px 0px;				
+		}
+	}
+}
+
+.subscribe{
+		margin-top: 60px;
+	
+	height: 200px;
+	background-color: $text-secondary;
+	// background-image: url(../img/p17.jpg);
+	// background-size: cover;
+	// background-position: bottom ;
+	
+
+	.subscribeText{		
+		padding-top: 35px;
+		
+		p{
+		color: $text-white;
+		font-size: $fz-4;		
+		line-height: 48px;
+		}
+	}
+	//.mail{
+		//margin-top: 20px;		
+	//}
+	input{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 16px;
+		border: 2px solid $text-light-primary;
+		border-radius: 4px 0px 0px 4px ;
+		font-family: "Noto Sans TC", sans-serif;
+		color: $text-secondary;
+	}
+	a{
+		background-color: $text-light-primary;
+		padding: 20px 27px;
+		margin-left: -5px;		
+		color: $text-white;
+		border-radius: 0px 4px 4px 0px ;
+
+		&:hover{
+			background-color: darken($text-light-primary,10%);
+		}
+	}
+}
+

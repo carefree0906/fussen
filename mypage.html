@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fussen</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!-- 載入 jQ 核心 -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <!-- 自己整理的 all.js，包含選單跟 FAQ -->
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <h1><a href="index.html"><img src="img/logo.svg" alt="logo"></a></h1>
+        <ul class="menu">
+            <li><a href="product.html"><span><i class="#"></i>所有商品</span></a></li>
+            <li><a href="#"><span><i class="fas fa-store-alt m-1"></i>香氛學堂</span></a></li>
+            <li><a href="login.html"><span><i class="fas fa-user m-1"></i>登入/註冊</span></a></li>
+            <li><a href="#"><span><i class="fas fa-heart m-1"></i>追蹤清單</span></a></li>
+            <li><a href="#"><i class="fas fa-shopping-cart m-1"></i><span>購物車(3)</span><em>3</em></a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="brand">
+    <div class="container">
+        <ul class="brandmenu">
+            <li><a href="product.html">所有商品</a></li>
+            <li><a href="product.html">全館熱銷商品</a></li>
+            <li><a href="product1.html">防疫專區</a></li>
+            <li><a href="#" class="pl-0">單方精油</a></li>
+            <li><a href="#">複方精油</a></li>
+            <li><a href="#">沐浴用品</a></li>
+            <li><a href="#">護膚按摩</a></li>
+            <li><a href="#">擴香工具</a></li>
+            <li><a href="#">精緻禮盒</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <div class="page">
+        <ul class="pageMenu">
+            <li class="pageTilte">會員中心</li>
+            <li><a href="#">會員資料修改</a></li>
+            <li><a href="#">訂單查詢</a></li>
+            <li><a href="#">退／換貨申請</a></li>
+        </ul>
+        <div class="column-reverse">
+            <form class="member">
+                <h3 class="memberTitle">個人資料修改</h3>
+                <div class="inputGroup">
+                    <label for="memberEmail">會員帳號</label>
+                    <p id="memberEmail">email@example.com</p>
+                </div>   
+                <div class="inputGroup">
+                    <label for="name">會員姓名</label>
+                    <input type="text" id="name"></input>
+                </div>
+                <div class="inputGroup">
+                    <label for="name">會員性別</label>
+                    <select>
+                        <option value="ms">女</option>
+                        <option value="men">男</option>
+                    </select>
+                </div>
+                <div class="inputGroup">
+                    <label for="email">電子信箱</label>
+                    <input class="inputText" type="text" id="email" placeholder="email@example.com"></input>
+                </div>
+                <div class="inputGroup">
+                    <label for="phone">手機號碼</label>
+                    <input type="tel" id="phone"></input>
+                </div>
+                <div class="inputGroup">
+                    <label for="address">聯絡地址</label> 
+                    <div class="d-column">
+                        <select class="col-6">
+                            <option value="1">台灣及離島</option>
+                            <option value="2">台灣</option>
+                            <option value="3">離島</option>
+                        </select>                   
+                        <div class="d-row">
+                            <select class="col-6">
+                                <option value="1">高雄市</option>
+                                <option value="2">台中市</option>
+                                <option value="3">台北市</option>
+                            </select>
+                            <select class="col-6">
+                                <option value="1">鹽埕區</option>
+                                <option value="2">前鎮區</option>
+                                <option value="3">旗津區</option>
+                            </select>
+                        </div>
+                        <input class="inputText" type="text" id="address" placeholder="請輸入地址"></input>
+                        <div>
+                            <input type="checkbox" id="checkbox" class="checkbox">
+                            <label for="checkbox">我願意收到最新優惠情報</label>
+                        </div>                    
+                    </div>                   
+
+                </div> 
+                <div class="inputGroup">
+                    <label for="receive-address">配送地址</label>
+                    <div class="d-column">
+                        <select class="col-6">
+                            <option value="1">台灣及離島</option>
+                            <option value="2">台灣</option>
+                            <option value="3">離島</option>
+                        </select>
+                        <div class="d-row">
+                            <select class="col-6">
+                                <option value="1">高雄市</option>
+                                <option value="2">台中市</option>
+                                <option value="3">台北市</option>
+                            </select>
+                            <select class="col-6">
+                                <option value="1">鹽埕區</option>
+                                <option value="2">前鎮區</option>
+                                <option value="3">旗津區</option>
+                            </select>
+                        </div>
+                        <input class="inputText" type="text" id="receive-address" placeholder="請輸入地址"></input>
+                        <a href="#" class="submitBtn">確定修改</a>
+                    </div>
+                
+                </div>
+
+                <p class="memberTitle">修改密碼</p>
+                <div class="inputGroup">
+                    <label for="old">舊密碼</label>
+                    <input type="password" id="old"></input>
+                </div>
+                <div class="inputGroup">
+                    <label for="new">新密碼</label>
+                    <input type="password" id="new"></input>
+                </div>
+                <div class="inputGroup">
+                    <label for="newCheck">確認密碼</label>
+                    <div class="d-column">
+                        <input type="password" id="newCheck"></input>
+                        <a href="#" class="submitBtn">變更密碼</a>
+                    </div>
+                </div>    
+            </form>
+            <div class="number">
+                <div class="d-row">
+                    <i class="fas fa-user"></i>
+                    <h2>會員編碼<span class="title">T00020080615</span></h2>
+                    
+                </div>
+                <div class="numberGroup">
+                    <label for="cart">購物車</label>
+                    <p type="text" id="cart" class="inputTextBorder">56</p>
+                </div>
+                <div class="numberGroup">
+                    <label for="cart">我的收藏</label>
+                    <p type="text" id="cart" class="inputTextBorder">23</p>
+                </div>
+                <div class="numberGroup">
+                    <label for="cart">完成訂單</label>
+                    <p type="text" id="cart" class="inputTextBorder">8</p>
+                </div>
+                <div class="numberGroup">
+                    <label for="cart">會員紅利</label>
+                    <p type="text" id="cart" class="inputTextBorder">2680</p>
+                </div>
+                <div class="numberGroup">
+                    <label for="cart">邀請碼</label>
+                    <p type="text" id="cart" class="inputTextBorder">TK2075</p>
+                </div>    
+                <div class="numberGroup">                
+                        <span class="point">新戶輸入邀請碼即可獲贈紅利點數1000點</span>
+                </div>
+
+             </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+<div class="footerBg">
+    <div class="container">
+        <div class="footer ">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logowhite.png" alt="Fussen">
+                </a>
+                <p>Logo©Copyright CHEN SHU-TING</p>
+            </div>
+            <ul class="menu">
+                <li><a href="#">香氛學堂</a></li>
+                <li><a href="login.html">登入/註冊</a></li>
+                <li><a href="#">追蹤清單</a></li>
+                <li><a href="#">會員服務</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

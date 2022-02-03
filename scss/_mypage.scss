@@ -1,0 +1,166 @@
+/*page*/
+.page{
+    display: flex;
+	color: $text-secondary;
+	line-height: 22px;	
+}
+.pageMenu{
+	width: 97px;
+	.pageTilte{		
+		line-height: 30px;
+		font-size: $fz-2;
+		margin-bottom: 16px;
+		font-weight: 600;
+	}
+	a{
+		display: block;
+		line-height: 24px;
+		color: $text-secondary;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		/*a也要加上border 滑鼠移入移出時就不會產生高度上的跳動*/		
+		border-bottom: 2px solid transparent;
+
+		&:hover{
+			border-bottom: 2px solid #916000;
+		}
+	}
+}	
+
+/*page-member*/
+.member{
+	width: 635px;
+	margin-left: 92px;
+	margin-right: 30px;
+	.memberTitle{
+		font-weight: bold;
+		color: $text-black;
+		padding-bottom: 8px;
+		border-bottom: 1px solid #818A91;
+		line-height: 22px;
+	}
+}
+.inputGroup{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	line-height: 38px;
+	label{
+		width: 94px;
+		// margin-right: 31px;
+
+	}
+	input{
+		width: 350px;
+		height: 38px;
+		border: 1px solid #CED4DA;
+		border-radius: 4px;
+	}
+	select{		
+		border: 1px solid #CED4DA;
+		border-radius: 4px;		
+	}	
+	.inputText,select{
+		color: $text-secondary;
+		font-size: $fz-normal;
+		font-family: "Noto Sans TC", sans-serif;
+	}
+	.col-6{
+		width: 160px;
+		height: 38px;		
+		margin-bottom: 12px;
+		margin-right: 8px;
+	}	
+	.checkbox{
+		width: 15px;
+		height: 15px;
+		margin-top: 12px;
+	}
+	.submitBtn{
+		// display: block;
+		width: 160px;
+		height: 38px;
+		background-color: $text-primary ;
+		border: 1px solid $text-primary;
+		border-radius: 4px;
+		text-align: center;
+		color: $text-white;
+		margin-top: 16px;
+		margin-bottom: 48px;
+	}
+}
+
+/*page-number*/
+.number{	
+		font-size: $fz-normal;
+		line-height: 30px;
+	.fa-user{
+		line-height: 30px;
+		margin-left: 6px;
+	}
+	.numberGroup{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+		label{
+		width: 94px;
+		}
+	}
+	.inputTextBorder{
+		border: 0px;
+	}	
+	.point{
+		font-size: $fz-1;
+		line-height: 21px;
+	}
+}
+
+/*flex row*/
+.d-row{
+	display: flex;
+	flex-direction: row;		
+}
+.d-column{
+	display: flex;
+	flex-direction: column;
+}
+.column-reverse{
+display: flex;
+	flex-direction: row;
+}
+.title{
+	font-size: $fz-2;
+	line-height: 30px;
+}	
+
+@include pad{
+	.page{
+		display: block;
+		margin-top: 49px;
+	}
+	.pageMenu{
+	width: 100%;
+	display: flex;
+	margin: 0 15px;
+
+		.pageTilte{
+			display: none;
+		}
+		li a{
+			margin-left: 22px;
+			margin-right: 22px;
+		}
+	}
+
+	.column-reverse{
+	display: flex;	
+		flex-direction: column-reverse;
+	}
+	.member{
+		width: 100%;
+		margin: 40px auto;
+	}
+	.number{
+		margin-top: 40px;
+	}
+}
